@@ -1,30 +1,35 @@
-# 🚀 FYBE TECH'e Hoş Geldiniz!
+# Fybetech
 
-> **Yeni nesil araçlarla, akıllı mobil çözümler üretiyoruz.**
+**Gerçekten işe yarayan küçük uygulamalar · Small apps that actually help**
 
-## ✨ Biz Kimiz?
+Fybetech, gündelik işlere yarayan küçük uygulamalar geliştiren bağımsız bir ürün stüdyosudur. Önce kendi ihtiyacım olan uygulamayı yapıyor, sonra herkesle paylaşıyorum.
 
-FYBE TECH, modern teknolojileri kullanarak yenilikçi mobil uygulamalar ve dijital ürünler geliştiren çevik bir yazılım ekibidir. Tek bir projeye veya sektöre bağlı kalmadan; kullanıcıların günlük hayatına değer katan, ölçeklenebilir, yüksek performanslı ve akıllı çözümler üretiyoruz.
+Fybetech is an independent product studio building small, focused apps for everyday life — solving my own everyday problems first, then sharing them with everyone.
 
-## 🎯 Temel Odak Alanlarımız
+---
 
-| Odak | Açıklama |
-| :--- | :--- |
-| 📱 **Mobil Çözümler** | iOS ve modern platformlar için akıcı, kullanıcı dostu ve native hissiyatlı mobil uygulamalar. |
-| 🤖 **Yapay Zeka (AI) Entegrasyonları** | Yeni nesil yapay zeka araçlarını projelerimize entegre ederek daha akıllı ve proaktif sistemler geliştirme. |
-| ⚙️ **Ölçeklenebilir Mimariler** | Güçlü veritabanı tasarımları ve güvenli arka uç (backend) servisleri ile kesintisiz hizmet. |
-| 🎨 **UI/UX Odaklı Tasarım** | Sadece çalışan değil, aynı zamanda estetik ve kullanması keyifli arayüzler. |
+## 🛠️ Mimari ve Teknoloji / Architecture & Stack
 
-## 🚀 Geliştirme Kültürümüz
+Ürünler üç ana katmandan oluşur; üçüncü taraf reklam, analitik veya takip SDK'sı kullanılmaz:
 
-Ürünlerimizi geliştirirken en yüksek mühendislik standartlarını hedefleriz:
-*   **Temiz ve Modüler Kod:** Sürdürülebilir kodlama ve sıkı PR (Pull Request) süreçleri.
-*   **Güvenli Altyapı:** Ayrılmış `develop` (test) ve `master` (canlı) ortamları ile sıfır hata toleransı.
-*   **Sürekli Teslimat (CI/CD):** Fikirleri en hızlı ve en güvenli şekilde son kullanıcıya ulaştırma.
+| Katman / Layer | Teknolojiler / Stack | Yaklaşım / Approach |
+| :--- | :--- | :--- |
+| **iOS (Native UI)** | SwiftUI, Asset & String Catalogs, Keychain, UserNotifications | Apple'ın kendi bileşenleriyle tam native deneyim, açık/koyu tema, TR/EN dil desteği. |
+| **Shared Logic (KMP)** | Kotlin Multiplatform, SQLDelight, Ktor, Coroutines, Koin | Offline-first yerel SQLite veritabanı; tüm iş ve hesaplama kuralları tek merkezde ve testli. |
+| **Backend API** | Java (LTS), Spring Boot, Spring Security, PostgreSQL, Redis | Çift yönlü (UUID upsert) senkronizasyon, sunucu doğrulamalı ilerleme hesabı. |
+| **Web** | Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion | İnteraktif ürün önizlemesi ve çok dilli tanıtım sitesi ([fybetech.com](https://fybetech.com)). |
 
-## 📬 Bize Ulaşın
+---
 
-Birlikte çalışmak, projelerimiz hakkında bilgi almak veya ekibimizle tanışmak için bize her zaman ulaşabilirsiniz:
+## ⚙️ Mühendislik İlkeleri / Engineering Principles
 
-*   📧 **E-posta:** [fybetech.team@gmail.com](mailto:fybetech.team@gmail.com)
-*   💼 **LinkedIn:** [FYBE TECH](https://www.linkedin.com/company/fybe-tech)
+- **Offline-First:** Tüm veriler önce cihazdaki yerel veritabanına yazılır; internet bağlantısı olduğunda arka planda eşitlenir.
+- **Tek Doğruluk Kaynağı:** Hesaplama ve zamanlama kuralları hem istemcide (Kotlin) hem sunucuda (Java) birebir aynı test senaryolarıyla doğrulanır.
+- **Sürekli Teslimat (CI/CD):** İzole `develop` ve `master` ortamları, otomatik testler ve sağlık kontrolü (health-check / rollback) destekli konteyner dağıtımı.
+
+---
+
+## 📬 İletişim / Contact
+
+- 🌐 **Web:** [fybetech.com](https://fybetech.com)
+- ✉️ **E-posta / Email:** [support@fybetech.com](mailto:support@fybetech.com)
