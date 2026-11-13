@@ -1,6 +1,6 @@
 # <img src="./mascot.svg" width="38" height="38" align="top" alt="Fybetech" /> Fybetech
 
-**Gerçekten işe yarayan küçük uygulamalar · Small apps that actually help**
+**Küçük adımlar, büyük değişim · Small steps, big change**
 
 Fybetech, gündelik işlere yarayan küçük uygulamalar geliştiren bağımsız bir ürün stüdyosudur. Önce kendi ihtiyacım olan uygulamayı yapıyor, sonra herkesle paylaşıyorum.
 
