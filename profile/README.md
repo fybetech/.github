@@ -2,9 +2,9 @@
 
 **Küçük adımlar, büyük değişim · Small steps, big change**
 
-Fybetech, gündelik işlere yarayan küçük uygulamalar geliştiren bağımsız bir ürün stüdyosudur. Önce kendi ihtiyacım olan uygulamayı yapıyor, sonra herkesle paylaşıyorum.
+Fybetech, gündelik hayatı kolaylaştıran, sade ve ulaşılabilir uygulamalar geliştiren bağımsız bir ürün stüdyosudur.
 
-Fybetech is an independent product studio building small, focused apps for everyday life — solving my own everyday problems first, then sharing them with everyone.
+Fybetech is an independent product studio building simple, accessible apps that make everyday life easier.
 
 ---
 
